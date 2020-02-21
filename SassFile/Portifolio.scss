@@ -1,0 +1,13 @@
+#Portifolio_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: $gray-bg;
+    .card{
+        .card-cover{
+            height: 455px;
+            overflow: hidden;
+        }
+        width: 388px;
+        height: 542px;
+    }
+}

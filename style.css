@@ -48,7 +48,7 @@ h4 {
   #Resume_container #left-col {
     border-right: solid 1px #dddddd; }
   #Resume_container #img {
-    background-image: url(/img/UCAMERA_20170205_144058.jpg);
+    background-image: url(img/UCAMERA_20170205_144058.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,3 +68,14 @@ h4 {
     clear: both; }
   #Resume_container .multi {
     float: left; }
+
+#Portifolio_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2F2F2; }
+  #Portifolio_container .card {
+    width: 388px;
+    height: 542px; }
+    #Portifolio_container .card .card-cover {
+      height: 455px;
+      overflow: hidden; }
