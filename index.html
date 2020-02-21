@@ -6,18 +6,57 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js.js"></script>
 </head>
 <body>
 <!-- Your Code Here -->
-<div id="Cover_container"></div>
-<div id="Resume_container"></div>
+<div id="Cover_container">
+    <h1>我是昱呈</h1>
+    <h4>歡迎來這裡認識我，相逢即是有緣</h4>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path d="M0 0h24v24H0V0z" fill="none"/></svg>
+</div>
+<div id="Resume_container" class="row">
+    <div id="left-col" class="col-12 col-md-6 d-flex flex-column align-items-around">
+        <div>
+            <div id="img" class="multi"></div>
+            <div class="multi my-5 ml-4">
+                <h3>葉昱呈</h3>
+                <h4>1997.12.24</h4>
+                <h4>聯絡電話：0920 670911</h4>
+            </div>
+        </div>
+        <p class="pl-5 text-justify">我是葉昱呈，雲林古坑人<br>目前就讀<u>高雄科技大學行銷系四年級</u>，<u>具備網頁設計的能力</u>，有行銷背景的我<u>能夠和UI/UX設計師順利溝通</u>，體會每個網頁設計背後的顧客旅程，以及設計師們對顧客的努力和思維邏輯．</p>
+    </div>
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-around">
+        <h4 id="addr">通訊地址：</h4>
+        <div>
+            <h4 class="multi">學歷：</h4>
+            <div id="scho" class="multi">
+            </div>
+        </div>
+        
+        <div class="float-clear">
+            <h4 class="multi">在學經歷：</h4>
+            <div id="hist" class="multi">
+            </div>
+        </div>
+        <div class="float-clear">
+            <h4 class="multi">在學工作經驗：</h4>
+            <div id="work" class="multi">
+            </div>
+        </div>
+
+    </div>
+</div>
 <div id="Portifolio_container"></div>
 <div id="Capability_container"></div>
 <div id="Moreinfo_container"></div>
 <!-- Your Code Here -->
 </body>
 <!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
  
 <!-- Bootstrap.js -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
