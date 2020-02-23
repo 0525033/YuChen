@@ -6,24 +6,20 @@
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
     h1{
         grid-row-start: 2;
-        grid-column-start: 2;
         align-self:end;
         color: white;
     }
     h4{
         grid-row-start: 3;
-        grid-column-start: 2;
         align-self: start;
         color: white;
     }
     svg{
         grid-row-start: 4;
-        grid-column-start: 2;
         fill: rgba($color: #FFF, $alpha: 0.5);
         width: 32px;
         height: 32px;

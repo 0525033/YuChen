@@ -1,6 +1,7 @@
 #Resume_container{
     width: 90vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     margin: 0 auto;
     padding-top: 15vh;
     padding-bottom: 10vh;
@@ -19,7 +20,7 @@
         height: 250px;
     }
     p{
-        font-size: 2rem;
+        font-size: 1.5vw;
         font-weight: 300;
         min-width: 272px;
         width: 80%;
