@@ -1,6 +1,11 @@
 $text-clr:#57514C;
 $gray-bg:#F2F2F2;
+*{
+    box-sizing: border-box;
+}
 body{
+    width: 100vw;
+    overflow-x: hidden;
     background-color: #F7F7F7;
 }
 h3{
@@ -16,4 +21,4 @@ h6{
     font-weight: 300;
 }
 
-@import "Cover","Resume","Portifolio";
+@import "Cover","Resume","Portifolio","Capability","MoreInfo";

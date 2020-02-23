@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box; }
+
 body {
+  width: 100vw;
+  overflow-x: hidden;
   background-color: #F7F7F7; }
 
 h3 {
@@ -101,3 +106,12 @@ h6 {
       writing-mode: vertical-lr;
       grid-row-start: 2;
       color: #AAAAAA; }
+
+#Capability_container {
+  width: 100vw;
+  height: 100vh; }
+
+#Moreinfo_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2F2F2; }
