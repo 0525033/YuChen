@@ -79,3 +79,9 @@ h4 {
     #Portifolio_container .card .card-cover {
       height: 455px;
       overflow: hidden; }
+  #Portifolio_container #page .mark {
+    width: 10px;
+    height: 10px;
+    background-color: red; }
+  #Portifolio_container #page h6 {
+    writing-mode: vertical-lr; }

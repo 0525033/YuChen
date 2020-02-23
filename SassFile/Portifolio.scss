@@ -10,4 +10,15 @@
         width: 388px;
         height: 542px;
     }
+    #page{
+        
+        .mark{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+        h6{
+            writing-mode: vertical-lr;
+        }
+    }
 }
