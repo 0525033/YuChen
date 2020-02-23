@@ -28,7 +28,7 @@ $(function(){
     multi('#work',Info.work,'h4');
 
     multi('#pages',Pages,"h6 class='title'");
-    $('h6').wrap("<a class='page' href='#'></a>");
+    $('h6').wrap("<a class='page' href='#' target='_blank'></a>");
     $('#pages h6').before("<div class='mark'></div>");
     
     $('.page:nth-child(3) .mark').addClass('mark-act');
@@ -47,18 +47,23 @@ $(function(){
         switch ($('h6',this).text()){
             case '商品頁面':
                 img_link(Page_img[0],Page_link[0]);
+                $('.card-title').text($('h6',this).text());
                 break;
             case '商品瀏覽':
                 img_link(Page_img[1],Page_link[1]);
+                $('.card-title').text($('h6',this).text());
                 break;
             case '首頁':
                 img_link(Page_img[2],Page_link[2]);
+                $('.card-title').text($('h6',this).text());
                 break;
             case '關於我們':
                 img_link(Page_img[3],Page_link[3]);
+                $('.card-title').text($('h6',this).text());
                 break;
             case '購物車':
                 img_link(Page_img[4],Page_link[4]);
+                $('.card-title').text($('h6',this).text());
                 break;
         }
     });

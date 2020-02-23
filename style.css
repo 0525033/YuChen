@@ -136,7 +136,8 @@ h6 {
       height: 3vw;
       max-height: 55px;
       background-color: #707070;
-      border-radius: 50%; }
+      border-radius: 50%;
+      transition: all 0.2s linear; }
     #Portifolio_container #pages .mark-act {
       min-width: 42px;
       width: 3vw;
