@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" integrity="sha256-xI/qyl9vpwWFOXz7+x/9WkG5j/SVnSw21viy8fWwbeE=" crossorigin="anonymous"></script>
     <script src="js.js"></script>
 </head>
 <body>
 <!-- Your Code Here -->
 <div id="Cover_container">
     <h1>我是昱呈</h1>
-    <h4>歡迎來這裡認識我，相逢即是有緣</h4>
+    <h4>相逢即是有緣，歡迎。</h4>
     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path d="M0 0h24v24H0V0z" fill="none"/></svg>
 </div>
 <div id="Resume_container" class="row">
@@ -27,7 +28,7 @@
                 <h4>聯絡電話：0920 670911</h4>
             </div>
         </div>
-        <p class="pl-md-5 text-justify">我是葉昱呈，雲林古坑人<br>目前就讀<u>高雄科技大學行銷系四年級</u>，<u>具備網頁設計的能力</u>，有行銷背景的我<u>能夠和UI/UX設計師順利溝通</u>，體會每個網頁設計背後的顧客旅程，以及設計師們對顧客的努力和思維邏輯．</p>
+        <p class="pl-md-5 text-justify">我是葉昱呈，雲林古坑人<br>目前就讀<u>高雄科技大學行銷系四年級</u>，<u>具備網頁設計的能力</u>，有行銷背景的我<u>能夠和UI/UX設計師順利溝通</u>，體會每個網頁設計背後的顧客旅程，以及設計師們對顧客的努力和思維邏輯。</p>
     </div>
     <div class="col-12 col-md-6 d-flex flex-column justify-content-around">
         <h4 id="addr" class=" my-3 my-md-0">通訊地址：</h4>
@@ -53,14 +54,17 @@
 <div id="Portifolio_container" class="d-flex flex-column align-items-center">
     <h4 class="mt-5">近期作品</h4>
     <h3>佳焙烘焙坊</h3>
-    <div class="card">
-        <div class="card-cover">
-            <img class="card-img-top" src="img/Interface_index.jpg" alt="chapei">
+    <a id="chapei" href="https://0525033.github.io/chapei/">
+        <div class="card">
+            <div class="card-cover">
+                <img class="card-img-top" src="img/Interface_index.jpg" alt="chapei">
+            </div>
+            <div class="card-body text-center">
+                <h４ class="card-title">首頁</h４>
+            </div>
         </div>
-        <div class="card-body text-center">
-            <h４ class="card-title">首頁</h４>
-        </div>
-    </div>
+    </a>
+    
     <div id="pages" class="mt-5">
     </div>
 </div>
@@ -68,9 +72,9 @@
 <div id="Moreinfo_container" class="d-flex flex-column align-items-center justify-content-between">
     <h3 class="mt-5">深入了解</h3>
     <div>
-        <p>上天的眷顧，我並沒有出生在富裕且美好的家庭，讓我比同輩更早意識到自己的不足，也更早開始為自己爭取機會，在就學期間多次嘗試各種領域之後在導師的一句話下開始學習網頁設計，犧牲自己的時間，每天除了上課和打工就是勤練網頁設計，好在有高中資處科的底子，在兩個月就掌握了HTML、CSS、JS、JQuery、Sass和Git，第三個月就開始接觸Vue.js。</p>
+        <p>　　上天的眷顧，我並沒有出生在富裕且美好的家庭，讓我比同輩更早意識到自己的不足，也更早開始為自己爭取機會，在就學期間多次嘗試各種領域之後在導師的一句話下開始學習網頁設計，犧牲自己的時間，每天除了上課和打工就是勤練網頁設計，好在有高中資處科的底子，在兩個月就掌握了HTML、CSS、JS、JQuery、Sass和Git，第三個月就開始接觸Vue.js。</p>
 
-        <p>因為過去社團及接案的經歷，讓我對Photoshop及Illustrator等軟體並不陌生，Adobe XD也很快就上手了，“設計”這件事非常有趣，也牽涉很廣，是我最早和行銷結合運用的一項技能，表面看似一張圖，實際上水很深，背後可能就考慮到了目標客群(TA)是誰，放在哪裡展示，TA如何透過我的設計接觸活動，流程是否順暢，資訊取得的方便性，而這些思維邏輯也被我運用在網頁設計的領域上。</p>
+        <p>　　因為過去社團及接案的經歷，讓我對Photoshop及Illustrator等軟體並不陌生，Adobe XD也很快就上手了，“設計”這件事非常有趣，也牽涉很廣，是我最早和行銷結合運用的一項技能，表面看似一張圖，實際上水很深，背後可能就考慮到了目標客群(TA)是誰，放在哪裡展示，TA如何透過我的設計接觸活動，流程是否順暢，資訊取得的方便性，而這些思維邏輯也被我運用在網頁設計的領域上。</p>
     </div>
     
     <div>

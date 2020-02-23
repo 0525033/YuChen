@@ -3,6 +3,16 @@ $gray-bg:#F2F2F2;
 *{
     box-sizing: border-box;
 }
+a{
+    color: unset;
+    &:hover{
+        text-decoration: none;
+        color: unset;
+    }
+    &:visited{
+        color: unset;
+    }
+}
 body{
     width: 100vw;
     overflow-x: hidden;

@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: $gray-bg;
+    color: $text-clr;
     .card{
         .card-cover{
             height: 455px;
@@ -13,13 +14,31 @@
         min-height: 418px;
         height: 28vw;
         max-height: 542px;
+        box-shadow: 0px 6px 8px rgba($color: #000000, $alpha: 0.2);
+        transform: translate(0px,0px);
+        transition: box-shadow 0.2s linear,transform 0.2s linear;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 6px 20px rgba($color: #000000, $alpha: 0.16);
+            transform: translate(0px,-2px);
+        }
     }
     #pages{
         width: 70vw;
         display: grid;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
+        justify-content: center;
+        .page{
+            width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
+            &:nth-child(3){
+                h6{
+                    color:#DDD23B;
+                }
+            }
+        }
         .mark{
             min-width:42px;
             width: 3vw;
@@ -29,7 +48,6 @@
             max-height: 55px;
             background-color: #707070;
             border-radius: 50%;
-            grid-row-start: 1;
         }
         .mark-act{
             min-width:42px;
@@ -39,15 +57,14 @@
             height: 3vw;
             max-height: 55px;
             border-radius: 50%;
-            grid-row-start: 1;
             background-color: #DDD23B;
         }
         h6{
             margin-top: 32px;
-            margin-left: 0;
-            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
             writing-mode: vertical-lr;
-            grid-row-start: 2;
             color: #AAAAAA;
         }
     }
