@@ -14,7 +14,7 @@ h3{
 }
 h4{
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 2rem;
 }
 h6{
     font-size: 1.5rem;
@@ -22,3 +22,11 @@ h6{
 }
 
 @import "Cover","Resume","Portifolio","Capability","MoreInfo";
+@media screen and (max-width:1200px){
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+}

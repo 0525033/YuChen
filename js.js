@@ -22,4 +22,8 @@ $(function(){
 
     multi('#pages',Pages,'h6');
     $('#pages h6').before("<div class='mark'></div>");
+
+    $('.mark').click(function(){
+        $(this).toggleClass('mark-act')
+    });
 })

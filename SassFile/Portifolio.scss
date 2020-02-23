@@ -7,26 +7,45 @@
             height: 455px;
             overflow: hidden;
         }
-        width: 388px;
-        height: 542px;
+        min-width: 299px;
+        width: 20vw;
+        max-width: 388px;
+        min-height: 418px;
+        height: 28vw;
+        max-height: 542px;
     }
     #pages{
+        width: 70vw;
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
         .mark{
-            width: 50px;
-            height: 50px;
+            min-width:42px;
+            width: 3vw;
+            max-width: 55px;
+            min-height: 42px;
+            height: 3vw;
+            max-height: 55px;
             background-color: #707070;
             border-radius: 50%;
             grid-row-start: 1;
         }
         .mark-act{
+            min-width:42px;
+            width: 3vw;
+            max-width: 55px;
+            min-height: 42px;
+            height: 3vw;
+            max-height: 55px;
+            border-radius: 50%;
+            grid-row-start: 1;
             background-color: #DDD23B;
         }
         h6{
             margin-top: 32px;
+            margin-left: 0;
+            margin-right: 0;
             writing-mode: vertical-lr;
             grid-row-start: 2;
             color: #AAAAAA;

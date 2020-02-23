@@ -12,7 +12,7 @@ h3 {
 
 h4 {
   font-weight: 300;
-  font-size: 1.5vw; }
+  font-size: 2rem; }
 
 h6 {
   font-size: 1.5rem;
@@ -60,10 +60,14 @@ h6 {
     background-repeat: no-repeat;
     border-radius: 50%;
     transform: rotate(-90deg);
-    width: 250px;
-    height: 250px; }
+    min-width: 110px;
+    width: 13vw;
+    max-width: 250px;
+    min-height: 110px;
+    height: 13vw;
+    max-height: 250px; }
   #Resume_container p {
-    font-size: 1.5vw;
+    font-size: 2rem;
     font-weight: 300;
     min-width: 272px;
     width: 80%;
@@ -74,32 +78,58 @@ h6 {
     clear: both; }
   #Resume_container .multi {
     float: left; }
+  @media screen and (max-width: 1200px) {
+    #Resume_container p {
+      font-size: 1rem;
+      line-height: 32px; } }
+  @media screen and (max-width: 768px) {
+    #Resume_container p {
+      margin-top: 4rem; } }
 
 #Portifolio_container {
   width: 100vw;
   height: 100vh;
   background-color: #F2F2F2; }
   #Portifolio_container .card {
-    width: 388px;
-    height: 542px; }
+    min-width: 299px;
+    width: 20vw;
+    max-width: 388px;
+    min-height: 418px;
+    height: 28vw;
+    max-height: 542px; }
     #Portifolio_container .card .card-cover {
       height: 455px;
       overflow: hidden; }
   #Portifolio_container #pages {
+    width: 70vw;
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center; }
     #Portifolio_container #pages .mark {
-      width: 50px;
-      height: 50px;
+      min-width: 42px;
+      width: 3vw;
+      max-width: 55px;
+      min-height: 42px;
+      height: 3vw;
+      max-height: 55px;
       background-color: #707070;
       border-radius: 50%;
       grid-row-start: 1; }
     #Portifolio_container #pages .mark-act {
+      min-width: 42px;
+      width: 3vw;
+      max-width: 55px;
+      min-height: 42px;
+      height: 3vw;
+      max-height: 55px;
+      border-radius: 50%;
+      grid-row-start: 1;
       background-color: #DDD23B; }
     #Portifolio_container #pages h6 {
       margin-top: 32px;
+      margin-left: 0;
+      margin-right: 0;
       writing-mode: vertical-lr;
       grid-row-start: 2;
       color: #AAAAAA; }
@@ -125,3 +155,9 @@ h6 {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
   #Moreinfo_container #footer {
     color: rgba(112, 112, 112, 0.5); }
+
+@media screen and (max-width: 1200px) {
+  h3 {
+    font-size: 1.5rem; }
+  h4 {
+    font-size: 1rem; } }
