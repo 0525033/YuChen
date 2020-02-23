@@ -10,15 +10,26 @@
         width: 388px;
         height: 542px;
     }
-    #page{
-        
+    #pages{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
         .mark{
-            width: 10px;
-            height: 10px;
-            background-color: red;
+            width: 50px;
+            height: 50px;
+            background-color: #707070;
+            border-radius: 50%;
+            grid-row-start: 1;
+        }
+        .mark-act{
+            background-color: #DDD23B;
         }
         h6{
+            margin-top: 32px;
             writing-mode: vertical-lr;
+            grid-row-start: 2;
+            color: #AAAAAA;
         }
     }
 }

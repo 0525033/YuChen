@@ -9,6 +9,10 @@ h4 {
   font-weight: 300;
   font-size: 2rem; }
 
+h6 {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
 #Cover_container {
   width: 100vw;
   height: 100vh;
@@ -79,9 +83,21 @@ h4 {
     #Portifolio_container .card .card-cover {
       height: 455px;
       overflow: hidden; }
-  #Portifolio_container #page .mark {
-    width: 10px;
-    height: 10px;
-    background-color: red; }
-  #Portifolio_container #page h6 {
-    writing-mode: vertical-lr; }
+  #Portifolio_container #pages {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+    #Portifolio_container #pages .mark {
+      width: 50px;
+      height: 50px;
+      background-color: #707070;
+      border-radius: 50%;
+      grid-row-start: 1; }
+    #Portifolio_container #pages .mark-act {
+      background-color: #DDD23B; }
+    #Portifolio_container #pages h6 {
+      margin-top: 32px;
+      writing-mode: vertical-lr;
+      grid-row-start: 2;
+      color: #AAAAAA; }

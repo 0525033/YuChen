@@ -22,6 +22,4 @@ $(function(){
 
     multi('#pages',Pages,'h6');
     $('#pages h6').before("<div class='mark'></div>");
-    $('.mark').before("<div class='page'>");
-    $('h6').after('</div>');
 })
