@@ -10,10 +10,19 @@ Pages=['商品頁面','商品瀏覽','首頁','關於我們','購物車']
 Page_img=['img/Item.jpg','img/Products.jpg','img/Interface_index.jpg','img/About.jpg','img/Cart.jpg']
 Page_link=['https://0525033.github.io/chapei/Product_item.html','https://0525033.github.io/chapei/Products.html','https://0525033.github.io/chapei/','https://0525033.github.io/chapei/about.html','https://0525033.github.io/chapei/Cart.html']
 
+function capability(){}
+Cap=new capability();
+Cap.HTML=0.9;
+Cap.CSS=0.85;
+Cap.Sass=0.75;
+Cap.JQuery=0.7;
+Cap.Vue=0.5;
+Cap.JS=0.6;
+
 function img_link(img,link){
     $('.card img').attr('src',img);
     $('#chapei').attr('href',link);
-}
+};
 
 function multi(tar,array,el){
     for (i=0;i<array.length;i++){
