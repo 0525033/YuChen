@@ -92,7 +92,9 @@ h6 {
       line-height: 32px; } }
   @media screen and (max-width: 768px) {
     #Resume_container p {
-      margin-top: 4rem; } }
+      margin-top: 4rem; }
+    #Resume_container #left-col {
+      border-right: unset; } }
 
 #Portifolio_container {
   width: 100vw;
@@ -158,90 +160,129 @@ h6 {
 #Capability_container {
   width: 100vw;
   height: 100vh; }
+  #Capability_container h3 {
+    height: 4rem; }
+  #Capability_container .progress-bar-container {
+    min-width: 160px;
+    display: flex;
+    justify-self: center; }
   #Capability_container #HTML {
-    stroke: red;
+    stroke: #149EDB;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
     stroke-dashoffset: 109.9;
-    stroke-dasharray: 395.64, 43.96;
-    animation: score 1s; }
+    stroke-dasharray: 395.64, 43.96; }
+  #Capability_container #CSS {
+    stroke: #1BD0B4;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 373.66, 65.94; }
+  #Capability_container #Sass {
+    stroke: #FF2F87;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 329.7, 109.9; }
+  #Capability_container #JQuery {
+    stroke: #FF7600;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 307.72, 131.88; }
+  #Capability_container #Vue {
+    stroke: #2ACE7C;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 219.8, 219.8; }
+  #Capability_container #JS {
+    stroke: #FFCE00;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 263.76, 175.84; }
+  #Capability_container #PS {
+    stroke: #149EDB;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 395.64, 43.96; }
+  #Capability_container #AI {
+    stroke: #2ACE7C;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 373.66, 65.94; }
+  #Capability_container #XD {
+    stroke: #FF2F87;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 351.68, 87.92; }
 
-@keyframes score {
+@keyframes HTML {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 395.64, 43.96; } }
-  #Capability_container #CSS {
-    stroke: red;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 373.66, 65.94;
-    animation: score 1s; }
 
-@keyframes score {
+@keyframes CSS {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 373.66, 65.94; } }
-  #Capability_container #Sass {
-    stroke: red;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 329.7, 109.9;
-    animation: score 1s; }
 
-@keyframes score {
+@keyframes Sass {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 329.7, 109.9; } }
-  #Capability_container #JQuery {
-    stroke: red;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 307.72, 131.88;
-    animation: score 1s; }
 
-@keyframes score {
+@keyframes JQuery {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 307.72, 131.88; } }
-  #Capability_container #Vue {
-    stroke: red;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 219.8, 219.8;
-    animation: score 1s; }
 
-@keyframes score {
+@keyframes Vue {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 219.8, 219.8; } }
-  #Capability_container #JS {
-    stroke: red;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 263.76, 175.84;
-    animation: score 1s; }
 
-@keyframes score {
+@keyframes JS {
   0% {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 263.76, 175.84; } }
+
+@keyframes PS {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 395.64, 43.96; } }
+
+@keyframes AI {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 373.66, 65.94; } }
+
+@keyframes XD {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 351.68, 87.92; } }
 
 #Moreinfo_container {
   width: 100vw;

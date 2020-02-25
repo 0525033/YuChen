@@ -1,74 +1,120 @@
 #Capability_container{
     width: 100vw;
     height: 100vh;
+    h3{
+        height: 4rem;
+    }
+    .progress-bar-container{
+        min-width: 160px;
+        display: flex;
+        justify-self: center;
+    }
     #HTML{
-        @include circle(90,red,HTML);
+        @include circle(90,#149EDB,HTML);
+    }
+    #CSS{
+        @include circle(85,#1BD0B4,CSS);
+    }
+    #Sass{
+        @include circle(75,#FF2F87,Sass);
+    }
+    #JQuery{
+        @include circle(70,#FF7600,JQuery);
+    }
+    #Vue{
+        @include circle(50,#2ACE7C,Vue);
+    }
+    #JS{
+        @include circle(60,#FFCE00,JS);
+    }
+    #PS{
+        @include circle(90,#149EDB,PS);
+    }
+    #AI{
+        @include circle(85,#2ACE7C,AI);
+    }
+    #XD{
+        @include circle(80,#FF2F87,XD);
+    }
+    .keyframes{
         @keyframes HTML {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*90/100,439.6*(100-90)/100;
             }
             
         }
-    }
-    #CSS{
-        @include circle(85,red,CSS);
         @keyframes CSS {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*85/100,439.6*(100-85)/100;
             }
             
         }
-    }
-    #Sass{
-        @include circle(75,red,Sass);
         @keyframes Sass {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*75/100,439.6*(100-75)/100;
             }
             
         }
-    }
-    #JQuery{
-        @include circle(70,red,JQuery);
         @keyframes JQuery {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*70/100,439.6*(100-70)/100;
             }
             
         }
-    }
-    #Vue{
-        @include circle(50,red,Vue);
         @keyframes Vue {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*50/100,439.6*(100-50)/100;
             }
             
         }
-    }
-    #JS{
-        @include circle(60,red,JS);
         @keyframes JS {
             0%{
                 stroke-dasharray: 0,439.6;
             }
             100%{
-                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+                stroke-dasharray:439.6*60/100,439.6*(100-60)/100;
+            }
+            
+        }
+        @keyframes PS {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*90/100,439.6*(100-90)/100;
+            }
+            
+        }
+        @keyframes AI {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*85/100,439.6*(100-85)/100;
+            }
+            
+        }
+        @keyframes XD {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*80/100,439.6*(100-80)/100;
             }
             
         }

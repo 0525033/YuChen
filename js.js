@@ -10,14 +10,6 @@ Pages=['商品頁面','商品瀏覽','首頁','關於我們','購物車']
 Page_img=['img/Item.jpg','img/Products.jpg','img/Interface_index.jpg','img/About.jpg','img/Cart.jpg']
 Page_link=['https://0525033.github.io/chapei/Product_item.html','https://0525033.github.io/chapei/Products.html','https://0525033.github.io/chapei/','https://0525033.github.io/chapei/about.html','https://0525033.github.io/chapei/Cart.html']
 
-function capability(){}
-Cap=new capability();
-Cap.HTML=0.9;
-Cap.CSS=0.85;
-Cap.Sass=0.75;
-Cap.JQuery=0.7;
-Cap.Vue=0.5;
-Cap.JS=0.6;
 
 function img_link(img,link){
     $('.card img').attr('src',img);
@@ -76,4 +68,52 @@ $(function(){
                 break;
         }
     });
+
+
+    $('#HTML').hide()
+    $('#CSS').hide()
+    $('#Sass').hide()
+    $('#JQuery').hide()
+    $('#Vue').hide()
+    $('#JS').hide()
+    $('#PS').hide()
+    $('#AI').hide()
+    $('#XD').hide()
+
+    $(document).scroll(function() {
+        var scroH = $(document).scrollTop();  //滚动高度
+        var viewH = $(window).height();  //可见高度 
+        var contentH = $(document).height();  //内容高度
+        var position = scroH/viewH;
+        
+        if (position>=0&position<0.9){
+            console.log('歡迎！');
+        }else if(position>=0.9&position<1.9) {
+            console.log('履歷');
+        }else if(position>1.9&position<2.9){
+            console.log('作品');
+        }else if(position>2.9&position<3.9){
+            console.log('能力儀表板');
+            $('#HTML').show()
+            $('#CSS').show()
+            $('#Sass').show()
+            $('#JQuery').show()
+            $('#Vue').show()
+            $('#JS').show()
+            $('#PS').show()
+            $('#AI').show()
+            $('#XD').show()
+            $('#HTML').css('animation','HTML 2s');
+            $('#CSS').css('animation','CSS 2s');
+            $('#Sass').css('animation','Sass 2s');
+            $('#JQuery').css('animation','JQuery 2s');
+            $('#Vue').css('animation','Vue 2s');
+            $('#JS').css('animation','JS 2s');
+            $('#PS').css('animation','PS 2s')
+            $('#AI').css('animation','AI 2s')
+            $('#XD').css('animation','XD 2s')
+        }else{
+            console.log('深入了解');
+        }
+    })
 })
