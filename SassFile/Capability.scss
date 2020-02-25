@@ -7,7 +7,14 @@
     .progress-bar-container{
         min-width: 160px;
         display: flex;
-        justify-self: center;
+        justify-content: center;
+        svg{
+            width: 150px;
+            text{
+                font-size: 22px;
+                fill: $text-clr;
+            }
+        }
     }
     #HTML{
         @include circle(90,#149EDB,HTML);

@@ -165,7 +165,12 @@ h6 {
   #Capability_container .progress-bar-container {
     min-width: 160px;
     display: flex;
-    justify-self: center; }
+    justify-content: center; }
+    #Capability_container .progress-bar-container svg {
+      width: 150px; }
+      #Capability_container .progress-bar-container svg text {
+        font-size: 22px;
+        fill: #57514C; }
   #Capability_container #HTML {
     stroke: #149EDB;
     fill: none;
