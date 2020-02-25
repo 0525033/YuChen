@@ -2,21 +2,75 @@
     width: 100vw;
     height: 100vh;
     #HTML{
-        @include circle(90,red);
+        @include circle(90,red,HTML);
+        @keyframes HTML {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
     #CSS{
-        @include circle(85,red);
+        @include circle(85,red,CSS);
+        @keyframes CSS {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
     #Sass{
-        @include circle(75,red);
+        @include circle(75,red,Sass);
+        @keyframes Sass {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
     #JQuery{
-        @include circle(70,red);
+        @include circle(70,red,JQuery);
+        @keyframes JQuery {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
     #Vue{
-        @include circle(50,red);
+        @include circle(50,red,Vue);
+        @keyframes Vue {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
     #JS{
-        @include circle(60,red);
+        @include circle(60,red,JS);
+        @keyframes JS {
+            0%{
+                stroke-dasharray: 0,439.6;
+            }
+            100%{
+                stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+            }
+            
+        }
     }
 }

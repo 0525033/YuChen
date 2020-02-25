@@ -159,65 +159,89 @@ h6 {
   width: 100vw;
   height: 100vh; }
   #Capability_container #HTML {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #HTML:hover {
-      stroke-dasharray: 395.64, 43.96; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 395.64, 43.96;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 395.64, 43.96; } }
   #Capability_container #CSS {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #CSS:hover {
-      stroke-dasharray: 373.66, 65.94; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 373.66, 65.94;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 373.66, 65.94; } }
   #Capability_container #Sass {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #Sass:hover {
-      stroke-dasharray: 329.7, 109.9; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 329.7, 109.9;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 329.7, 109.9; } }
   #Capability_container #JQuery {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #JQuery:hover {
-      stroke-dasharray: 307.72, 131.88; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 307.72, 131.88;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 307.72, 131.88; } }
   #Capability_container #Vue {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #Vue:hover {
-      stroke-dasharray: 219.8, 219.8; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 219.8, 219.8;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 219.8, 219.8; } }
   #Capability_container #JS {
-    stroke-dashoffset: 109.9;
-    stroke-dasharray: 0,439.6;
     stroke: red;
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transition: all 1s linear; }
-    #Capability_container #JS:hover {
-      stroke-dasharray: 263.76, 175.84; }
+    stroke-dashoffset: 109.9;
+    stroke-dasharray: 263.76, 175.84;
+    animation: score 1s; }
+
+@keyframes score {
+  0% {
+    stroke-dasharray: 0,439.6; }
+  100% {
+    stroke-dasharray: 263.76, 175.84; } }
 
 #Moreinfo_container {
   width: 100vw;
