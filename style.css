@@ -98,7 +98,8 @@ h6 {
 
 #Portifolio_container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   background-color: #F2F2F2;
   color: #57514C; }
   #Portifolio_container .card {
@@ -353,7 +354,8 @@ h6 {
 
 #Moreinfo_container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   background-color: #F2F2F2;
   color: #707070; }
   #Moreinfo_container p {

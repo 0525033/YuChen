@@ -1,6 +1,7 @@
 #Portifolio_container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background-color: $gray-bg;
     color: $text-clr;
     .card{

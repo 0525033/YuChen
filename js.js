@@ -90,16 +90,19 @@ $(function(){
     $(document).scroll(function() {
         var scroH = $(document).scrollTop();  //滚动高度
         var viewH = $(window).height();  //可见高度 
-        var contentH = $(document).height();  //内容高度
-        var position = scroH/viewH;
+
+        var ResH=$('#Resume_container').offset().top //各元素座標
+        var PorH=$('#Portifolio_container').offset().top
+        var CapH=$('#Capability_container').offset().top
+        var MorH=$('#Moreinfo_container').offset().top
         
-        if (position>=0&position<0.9){
+        if (scroH>=0&scroH<ResH){
             console.log('歡迎！');
-        }else if(position>=0.9&position<1.9) {
+        }else if(scroH>=ResH&scroH<PorH) {
             console.log('履歷');
-        }else if(position>1.9&position<2.9){
+        }else if(scroH>PorH&scroH<CapH){
             console.log('作品');
-        }else if(position>2.9&position<3.9){
+        }else if(scroH>CapH&scroH<MorH){
             console.log('能力儀表板');
             $('#HTML').show()
             $('#CSS').show()
