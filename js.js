@@ -22,6 +22,14 @@ function multi(tar,array,el){
     };
 };
 
+if ($(window).width()<768){
+    $.get('Capability_M.txt',function(data){
+        $('#Capability_container').html(data)
+    })
+}
+
+
+
 $(function(){
     $('#addr').append(Info.addr);
     multi('#scho',Info.scho,'h4');
@@ -68,7 +76,6 @@ $(function(){
                 break;
         }
     });
-
 
     $('#HTML').hide()
     $('#CSS').hide()

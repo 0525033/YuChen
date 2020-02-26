@@ -163,77 +163,93 @@ h6 {
   #Capability_container h3 {
     height: 4rem; }
   #Capability_container .progress-bar-container {
-    min-width: 160px;
     display: flex;
     justify-content: center; }
     #Capability_container .progress-bar-container svg {
-      width: 150px; }
+      width: 150px;
+      stroke-width: 10;
+      stroke-linecap: round;
+      fill: none; }
       #Capability_container .progress-bar-container svg text {
         font-size: 22px;
         fill: #57514C; }
+      @media screen and (max-width: 768px) {
+        #Capability_container .progress-bar-container svg {
+          width: 100px; }
+          #Capability_container .progress-bar-container svg text {
+            font-size: 1rem; } }
   #Capability_container #HTML {
     stroke: #149EDB;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 395.64, 43.96; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #HTML {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 254.469, 28.27433; } }
   #Capability_container #CSS {
     stroke: #1BD0B4;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 373.66, 65.94; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #CSS {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 240.33184, 42.4115; } }
   #Capability_container #Sass {
     stroke: #FF2F87;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 329.7, 109.9; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #Sass {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 212.0575, 70.68583; } }
   #Capability_container #JQuery {
     stroke: #FF7600;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 307.72, 131.88; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #JQuery {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 197.92034, 84.823; } }
   #Capability_container #Vue {
     stroke: #2ACE7C;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 219.8, 219.8; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #Vue {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 141.37167, 141.37167; } }
   #Capability_container #JS {
     stroke: #FFCE00;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 263.76, 175.84; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #JS {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 169.646, 113.09734; } }
   #Capability_container #PS {
     stroke: #149EDB;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 395.64, 43.96; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #PS {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 254.469, 28.27433; } }
   #Capability_container #AI {
     stroke: #2ACE7C;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 373.66, 65.94; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #AI {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 240.33184, 42.4115; } }
   #Capability_container #XD {
     stroke: #FF2F87;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray: 351.68, 87.92; }
+    @media screen and (max-width: 768px) {
+      #Capability_container #XD {
+        stroke-dashoffset: 70.68583;
+        stroke-dasharray: 226.19467, 56.54867; } }
 
 @keyframes HTML {
   0% {
@@ -288,6 +304,52 @@ h6 {
     stroke-dasharray: 0,439.6; }
   100% {
     stroke-dasharray: 351.68, 87.92; } }
+  @media screen and (max-width: 768px) {
+    @keyframes HTML {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 254.469, 28.27433; } }
+    @keyframes CSS {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 240.33184, 42.4115; } }
+    @keyframes Sass {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 212.0575, 70.68583; } }
+    @keyframes JQuery {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 197.92034, 84.823; } }
+    @keyframes Vue {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 141.37167, 141.37167; } }
+    @keyframes JS {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 169.646, 113.09734; } }
+    @keyframes PS {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 254.469, 28.27433; } }
+    @keyframes AI {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 240.33184, 42.4115; } }
+    @keyframes XD {
+      0% {
+        stroke-dasharray: 0,282.74333882308137; }
+      100% {
+        stroke-dasharray: 226.19467, 56.54867; } } }
 
 #Moreinfo_container {
   width: 100vw;

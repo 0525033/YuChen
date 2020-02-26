@@ -2,11 +2,12 @@ $text-clr:#57514C;
 $gray-bg:#F2F2F2;
 @mixin circle($score,$clr,$animation) {
     stroke: $clr;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dashoffset: 109.9;
+    stroke-dashoffset: 109.6;
     stroke-dasharray:439.6*$score/100,439.6*(100-$score)/100;
+    @media screen and (max-width:768px) {
+        stroke-dashoffset: 282.74333882308137*0.25;
+        stroke-dasharray:282.74333882308137*$score/100,282.74333882308137*(100-$score)/100;
+    }
 }
 *{
     box-sizing: border-box;

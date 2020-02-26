@@ -5,14 +5,22 @@
         height: 4rem;
     }
     .progress-bar-container{
-        min-width: 160px;
         display: flex;
         justify-content: center;
         svg{
             width: 150px;
+            stroke-width: 10;
+            stroke-linecap: round;
+            fill: none;
             text{
                 font-size: 22px;
                 fill: $text-clr;
+            }
+            @media screen and (max-width:768px){
+                width: 100px;
+                text{
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -124,6 +132,89 @@
                 stroke-dasharray:439.6*80/100,439.6*(100-80)/100;
             }
             
+        }
+        @media screen and (max-width:768px) {
+            @keyframes HTML {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*90/100,282.74333882308137*(100-90)/100;
+                }
+                
+            }
+            @keyframes CSS {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*85/100,282.74333882308137*(100-85)/100;
+                }
+                
+            }
+            @keyframes Sass {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*75/100,282.74333882308137*(100-75)/100;
+                }
+                
+            }
+            @keyframes JQuery {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*70/100,282.74333882308137*(100-70)/100;
+                }
+                
+            }
+            @keyframes Vue {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*50/100,282.74333882308137*(100-50)/100;
+                }
+                
+            }
+            @keyframes JS {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*60/100,282.74333882308137*(100-60)/100;
+                }
+                
+            }
+            @keyframes PS {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*90/100,282.74333882308137*(100-90)/100;
+                }
+                
+            }
+            @keyframes AI {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*85/100,282.74333882308137*(100-85)/100;
+                }
+                
+            }
+            @keyframes XD {
+                0%{
+                    stroke-dasharray: 0,282.74333882308137;
+                }
+                100%{
+                    stroke-dasharray:282.74333882308137*80/100,282.74333882308137*(100-80)/100;
+                }
+                
+            }
         }
     }
 }
