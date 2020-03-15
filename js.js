@@ -22,33 +22,11 @@ function multi(tar,array,el){
     };
 };
 
-if ($(window).width()<768){
-    $.get('Capability_M.txt',function(data){
-        $('#Capability_container').html(data)
-    })
-}
-
-
-
-$(function(){
-    $('#addr').append(Info.addr);
-    multi('#scho',Info.scho,'h4');
-    multi('#hist',Info.hist,'h4');
-    multi('#work',Info.work,'h4');
-
-    multi('#pages',Pages,"h6 class='title'");
-    $('h6').wrap("<a class='page' href='#' target='_blank'></a>");
-    $('#pages h6').before("<div class='mark'></div>");
-    
-    $('.page:nth-child(3) .mark').addClass('mark-act');
-
-    $('.page:nth-child(1)').attr('href',Page_link[0]);
-    $('.page:nth-child(2)').attr('href',Page_link[1]);
-    $('.page:nth-child(3)').attr('href',Page_link[2]);
-    $('.page:nth-child(4)').attr('href',Page_link[3]);
-    $('.page:nth-child(5)').attr('href',Page_link[4]);
-
-    $('.page').hover(function(){
+function porti(MorD){
+    if(MorD=='D'){
+        console.log('MorD')
+        $('.page').hover(function(){
+            console.log('hover')
         $('.mark').removeClass('mark-act');
         $('h6').css('color','#AAA')
         $('.mark',this).toggleClass('mark-act',1000,'easeOutSine');
@@ -75,7 +53,108 @@ $(function(){
                 $('.card-title').text($('h6',this).text());
                 break;
         }
-    });
+        
+    })}else if(MorD=='M'){
+        var count=0
+        var interval=setInterval(function myinterval(){
+        count+=1
+        if(count==5){count=0};
+        console.log(count)
+        $('.mark').removeClass('mark-act');
+        $('h6').css('color','#AAA')
+        switch (count){
+            case 0:
+                img_link(Page_img[0],Page_link[0]);
+                $('.card-title').text('商品頁面');
+                $('#pages .page:nth-child(1) .mark').addClass('mark-act')
+                $('#pages .page:nth-child(1) .title').css('color','#DDD23B')
+                break;
+            case 1:
+                img_link(Page_img[1],Page_link[1]);
+                $('.card-title').text('商品瀏覽');
+                $('#pages .page:nth-child(2) .mark').addClass('mark-act')
+                $('#pages .page:nth-child(2) .title').css('color','#DDD23B')
+                break;
+            case 2:
+                img_link(Page_img[2],Page_link[2]);
+                $('.card-title').text('首頁');
+                $('#pages .page:nth-child(3) .mark').addClass('mark-act')
+                $('#pages .page:nth-child(3) .title').css('color','#DDD23B')
+                break;
+            case 3:
+                img_link(Page_img[3],Page_link[3]);
+                $('.card-title').text('關於我們');
+                $('#pages .page:nth-child(4) .mark').addClass('mark-act')
+                $('#pages .page:nth-child(4) .title').css('color','#DDD23B')
+                break;
+            case 4:
+                img_link(Page_img[4],Page_link[4]);
+                $('.card-title').text('購物車');
+                $('#pages .page:nth-child(5) .mark').addClass('mark-act')
+                $('#pages .page:nth-child(5) .title').css('color','#DDD23B')
+                break;
+        }
+
+        if($(window).width()>768) clearInterval(interval)
+    },1000);
+    }
+    
+}
+
+
+
+
+
+
+
+
+$(function(){
+    if ($(window).width()>768){
+        $.get('Capability.txt',function(data){
+            $('#Capability_container').html(data)
+        })
+        porti('D')
+        console.log('success')
+    }else{
+        $.get('Capability_M.txt',function(data){
+            $('#Capability_container').html(data)
+        })
+        porti('M')
+    }
+
+    $(window).resize(function(){
+        if ($(window).width()>768){
+            $.get('Capability.txt',function(data){
+                $('#Capability_container').html(data)
+            })
+            porti('D')
+        }else{
+            $.get('Capability_M.txt',function(data){
+                $('#Capability_container').html(data)
+            })
+            porti('M')
+        }
+    }
+    )
+
+    $('#addr').append(Info.addr);
+    multi('#scho',Info.scho,'h4');
+    multi('#hist',Info.hist,'h4');
+    multi('#work',Info.work,'h4');
+
+    multi('#pages',Pages,"h6 class='title'");
+    $('h6').wrap("<a class='page' href='#' target='_blank'></a>");
+    $('#pages h6').before("<div class='mark'></div>");
+    
+    $('.page:nth-child(3) .mark').addClass('mark-act');
+
+    $('.page:nth-child(1)').attr('href',Page_link[0]);
+    $('.page:nth-child(2)').attr('href',Page_link[1]);
+    $('.page:nth-child(3)').attr('href',Page_link[2]);
+    $('.page:nth-child(4)').attr('href',Page_link[3]);
+    $('.page:nth-child(5)').attr('href',Page_link[4]);
+
+    
 
     $('#HTML').hide()
     $('#CSS').hide()
