@@ -101,13 +101,6 @@ function porti(MorD){
     
 }
 
-
-
-
-
-
-
-
 $(function(){
     if ($(window).width()>768){
         $.get('Capability.txt',function(data){
