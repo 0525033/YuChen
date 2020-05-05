@@ -8,7 +8,7 @@ Info.work_career=["加油員","晚班班長"]
 
 Pages=['商品頁面','商品瀏覽','首頁','關於我們','購物車']
 Page_img=['img/Item.jpg','img/Products.jpg','img/Interface_index.jpg','img/About.jpg','img/Cart.jpg']
-Page_link=['https://0525033.github.io/chapei/Product_item.html','https://0525033.github.io/chapei/Products.html','https://0525033.github.io/chapei/','https://0525033.github.io/chapei/about.html','https://0525033.github.io/chapei/Cart.html']
+Page_link=['https://chapei.herokuapp.com/Product_item.php?item=%E9%BA%B5%E5%8C%851','https://chapei.herokuapp.com/Products.html','https://chapei.herokuapp.com/','https://chapei.herokuapp.com/about.html','https://chapei.herokuapp.com/Cart.html']
 
 
 function img_link(img,link){
@@ -22,15 +22,15 @@ function multi(tar,array,el){
     };
 };
 
-function porti(MorD){
+async function porti(MorD){
     if(MorD=='D'){
-        console.log('MorD')
+        console.log(MorD)
         $('.page').hover(function(){
             console.log('hover')
-        $('.mark').removeClass('mark-act');
-        $('h6').css('color','#AAA')
-        $('.mark',this).toggleClass('mark-act',1000,'easeOutSine');
-        $('h6',this).css('color','#DDD23B');
+            $('.mark').removeClass('mark-act');
+            $('h6').css('color','#AAA')
+            $('.mark',this).toggleClass('mark-act',1000,'easeOutSine');
+            $('h6',this).css('color','#DDD23B');
         switch ($('h6',this).text()){
             case '商品頁面':
                 img_link(Page_img[0],Page_link[0]);
@@ -53,9 +53,9 @@ function porti(MorD){
                 $('.card-title').text($('h6',this).text());
                 break;
         }
-        
-    })}else if(MorD=='M'){
+        })}else if(MorD=='M'){
         var count=0
+        clearInterval(interval)
         var interval=setInterval(function myinterval(){
         count+=1
         if(count==5){count=0};
@@ -96,39 +96,36 @@ function porti(MorD){
         }
 
         if($(window).width()>768) clearInterval(interval)
-    },1000);
+    },2000);
     }
     
 }
 
 $(function(){
-    if ($(window).width()>768){
-        $.get('Capability.txt',function(data){
-            $('#Capability_container').html(data)
-        })
-        porti('D')
-        console.log('success')
+    if($(window).width()>768){
+        var status=0
     }else{
-        $.get('Capability_M.txt',function(data){
-            $('#Capability_container').html(data)
-        })
-        porti('M')
+        var status=1
     }
-
-    $(window).resize(function(){
+    setInterval(()=>{
         if ($(window).width()>768){
             $.get('Capability.txt',function(data){
                 $('#Capability_container').html(data)
             })
-            porti('D')
+            if(status===0){
+                porti('D')
+                status=1
+            }
         }else{
             $.get('Capability_M.txt',function(data){
                 $('#Capability_container').html(data)
             })
-            porti('M')
+            if(status===1){
+                porti('M')
+                status=0
+            }
         }
-    }
-    )
+    },500)
 
     $('#addr').append(Info.addr);
     multi('#scho',Info.scho,'h4');
